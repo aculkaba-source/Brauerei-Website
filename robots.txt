@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aculkaba-source.github.io/Brauerei-Website/sitemap.xml

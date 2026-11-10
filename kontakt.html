@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt &amp; Händler | Brauerei Muster</title>
+<meta name="description" content="Kontakt zur Brauerei Muster in Salzgitter: Kontaktformular, E-Mail-Adressen für Händler und Presse sowie Händler, bei denen es unsere Getränke gibt.">
+<link rel="canonical" href="https://aculkaba-source.github.io/Brauerei-Website/kontakt.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1C1C1E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Brauerei Muster">
+<meta property="og:title" content="Kontakt &amp; Händler | Brauerei Muster">
+<meta property="og:description" content="Kontakt zur Brauerei Muster in Salzgitter: Kontaktformular, E-Mail-Adressen für Händler und Presse sowie Händler, bei denen es unsere Getränke gibt.">
+<meta property="og:url" content="https://aculkaba-source.github.io/Brauerei-Website/kontakt.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="">
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<header class="kopf">
+  <div class="container kopf__innen">
+    <a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="23" fill="#1C1C1E"/><g fill="#F0B860"><ellipse cx="24" cy="12" rx="3" ry="4.6"/><ellipse cx="19.2" cy="18" rx="3" ry="4.4" transform="rotate(-28 19.2 18)"/><ellipse cx="28.8" cy="18" rx="3" ry="4.4" transform="rotate(28 28.8 18)"/><ellipse cx="19.2" cy="25.5" rx="3" ry="4.4" transform="rotate(-28 19.2 25.5)"/><ellipse cx="28.8" cy="25.5" rx="3" ry="4.4" transform="rotate(28 28.8 25.5)"/></g><path d="M24 17v22" stroke="#F0B860" stroke-width="2.2" stroke-linecap="round"/></svg><span>Brauerei Muster</span></a>
+    <button class="menu-knopf" type="button" aria-expanded="false" aria-controls="hauptnavigation"><span class="menu-knopf__striche" aria-hidden="true"></span>Menü</button>
+    <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
+      <ul><li><a href="index.html">Start</a></li><li><a href="produkte.html">Produkte</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="standort.html">Standort</a></li><li><a href="brauprozess.html">Brauprozess</a></li><li><a href="kontakt.html" aria-current="page">Kontakt & Händler</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="inhalt">
+<section class="seiten-kopf">
+  <div class="container">
+    <p class="eyebrow">Kontakt &amp; Händler</p>
+    <h1>Schreib uns</h1>
+    <p class="lead">Fragen zu unseren Produkten, Interesse als Händler oder eine Anmeldung zur Werksführung? Wir freuen uns auf deine Nachricht.</p>
+  </div>
+</section>
+<section class="abschnitt" aria-labelledby="h-formular">
+  <div class="container kontakt-raster">
+    <div>
+      <h2 id="h-formular">Kontaktformular</h2>
+      <form class="formular" id="kontakt-formular" novalidate>
+        <p class="formular-hinweis">Hinweis: Dies ist ein Demo-Formular. Es werden keine Daten gesendet oder gespeichert.</p>
+        <div class="feld"><label for="k-name">Name</label><input id="k-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="feld"><label for="k-email">E-Mail-Adresse</label><input id="k-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="feld"><label for="k-anliegen">Anliegen <span class="optional">(optional)</span></label>
+          <select id="k-anliegen" name="anliegen"><option>Allgemeine Frage</option><option>Händleranfrage</option><option>Werksführung</option><option>Presse</option><option>Bewerbung</option></select></div>
+        <div class="feld"><label for="k-nachricht">Nachricht</label><textarea id="k-nachricht" name="nachricht" required></textarea></div>
+        <label class="check-feld"><input type="checkbox" name="datenschutz" required> <span>Ich habe die <a href="impressum.html#datenschutz">Datenschutzhinweise</a> gelesen.</span></label>
+        <div><button class="knopf" type="submit">Nachricht senden</button></div>
+      </form>
+      <div class="danke" id="danke" tabindex="-1" role="status" hidden>
+        <svg viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="28" fill="#4E9A3F"/><path d="M16 29l8 8 16-17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Danke<span id="danke-name"></span>!</h3>
+        <p>Deine Nachricht ist bei uns angekommen. Wir melden uns so schnell wie möglich. <em>(Demo: Es wurde nichts gesendet.)</em></p>
+        <button class="knopf knopf--hell" type="button" id="neue-nachricht">Neue Nachricht schreiben</button>
+      </div>
+    </div>
+    <aside class="kontakt-box" aria-labelledby="h-direkt">
+      <h2 id="h-direkt">Direkter Kontakt</h2>
+      <dl>
+        <div><dt>Adresse</dt><dd><address class="adresse">Brauerei Muster GmbH<br>Musterbrauweg 1<br>38229 Salzgitter</address></dd></div>
+        <div><dt>E-Mail</dt><dd><a href="mailto:info@brauerei-muster.example">info@brauerei-muster.example</a></dd></div>
+        <div><dt>Händleranfragen</dt><dd><a href="mailto:handel@brauerei-muster.example">handel@brauerei-muster.example</a></dd></div>
+        <div><dt>Presse</dt><dd><a href="mailto:presse@brauerei-muster.example">presse@brauerei-muster.example</a></dd></div>
+        <div><dt>Telefon</dt><dd>+49 0000 000000 <span style="font-weight:400">(fiktive Nummer)</span></dd></div>
+        <div><dt>Erreichbar</dt><dd>Mo–Fr, 8–17 Uhr</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="abschnitt abschnitt--flaeche" id="haendler" aria-labelledby="h-haendler">
+  <div class="container">
+    <div class="kopf-abschnitt"><p class="eyebrow">Wo kaufen?</p><h2 id="h-haendler">Unsere Händler</h2><p class="lead">Eine Auswahl an Händlern und Gastronomen, bei denen es unsere Getränke gibt. Du möchtest selbst Händler werden? Schreib an <a href="mailto:handel@brauerei-muster.example">handel@brauerei-muster.example</a>.</p></div>
+    <ul class="haendler"><li class="einblenden"><span class="art">Getränkemarkt</span><h3>Getränkewelt Fasskeller</h3><p>Beispielstraße 12, 38226 Salzgitter</p></li><li class="einblenden"><span class="art">Supermarkt</span><h3>Frischemarkt am Stadtpark</h3><p>Parkallee 3, 38229 Salzgitter</p></li><li class="einblenden"><span class="art">Getränkemarkt</span><h3>Durstlöscher Getränkehandel</h3><p>Am Musterhafen 7, 38100 Braunschweig</p></li><li class="einblenden"><span class="art">Bar &amp; Gastronomie</span><h3>Hopfenbar Lindenhof</h3><p>Lindenweg 21, 38300 Wolfenbüttel</p></li><li class="einblenden"><span class="art">Campus</span><h3>Kiosk am Campus</h3><p>Hochschulweg 1, 84036 Landshut</p></li><li class="einblenden"><span class="art">Online</span><h3>Musterkiste – Getränke online</h3><p>Lieferung in ganz Deutschland</p></li></ul>
+    <p style="margin-top:1.5rem;font-size:.9rem;color:var(--text-leise)">Alle Händler sind frei erfunden.</p>
+  </div>
+</section>
+</main>
+<footer class="fuss">
+  <div class="container">
+    <div class="fuss__raster">
+      <div>
+        <a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="23" fill="#1C1C1E"/><g fill="#F0B860"><ellipse cx="24" cy="12" rx="3" ry="4.6"/><ellipse cx="19.2" cy="18" rx="3" ry="4.4" transform="rotate(-28 19.2 18)"/><ellipse cx="28.8" cy="18" rx="3" ry="4.4" transform="rotate(28 28.8 18)"/><ellipse cx="19.2" cy="25.5" rx="3" ry="4.4" transform="rotate(-28 19.2 25.5)"/><ellipse cx="28.8" cy="25.5" rx="3" ry="4.4" transform="rotate(28 28.8 25.5)"/></g><path d="M24 17v22" stroke="#F0B860" stroke-width="2.2" stroke-linecap="round"/></svg><span>Brauerei Muster</span></a>
+        <address class="adresse">Brauerei Muster GmbH<br>Musterbrauweg 1<br>38229 Salzgitter</address>
+        <p><a href="mailto:info@brauerei-muster.example">info@brauerei-muster.example</a></p>
+      </div>
+      <div>
+        <h2>Produkte</h2>
+        <ul><li><a href="produkte.html">Alle Produkte</a></li><li><a href="produkte.html?linie=bier">Bier</a></li><li><a href="produkte.html?linie=radler">Radler</a></li><li><a href="produkte.html?linie=limo">Limonade</a></li></ul>
+      </div>
+      <div>
+        <h2>Unternehmen</h2>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns &amp; Geschichte</a></li>
+          <li><a href="standort.html">Standort Salzgitter</a></li>
+          <li><a href="brauprozess.html">Brauprozess &amp; Qualität</a></li>
+          <li><a href="kontakt.html">Kontakt &amp; Händler</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Rechtliches</h2>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="impressum.html#datenschutz">Datenschutz</a></li>
+        </ul>
+        <p style="margin-top:1rem">Genieße Alkohol verantwortungsvoll. Kein Verkauf alkoholischer Getränke an Personen unter 16 bzw. 18 Jahren.</p>
+      </div>
+    </div>
+    <div class="fuss__unten">
+      <p class="hinweis-fiktiv">Fiktives Studienprojekt – keine echte Brauerei, keine echten Produkte.</p>
+      <p class="hinweis-fiktiv">© <span data-jahr>2026</span> Brauerei Muster</p>
+    </div>
+  </div>
+</footer>
+<script src="js/produkte.js"></script>
+<script src="js/grafik.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

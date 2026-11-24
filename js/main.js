@@ -302,7 +302,7 @@
       $$("[data-produkt-name]").forEach((el) => (el.textContent = p.name));
 
       let h = '<div class="detail-kopf">';
-      h += '<div class="detail-bild einblenden">' + window.produktSVG(p, (p.gebinde === "dose" ? "Dose " : "Flasche ") + p.name) + "</div>";
+      h += '<div class="detail-bild einblenden">' + window.produktSVG(p, p.name + " in der 0,5-l-Flasche", "05") + window.produktSVG(p, p.name + " in der 0,33-l-Flasche", "033") + "</div>";
       h += '<div class="detail-intro">';
       h += '<p class="eyebrow" style="color:' + l.text + '">' + esc(l.name) + "</p>";
       h += "<h1>" + esc(p.name) + "</h1>";

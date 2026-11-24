@@ -1,5 +1,5 @@
 /* =====================================================================
-   ZENTRALE PRODUKTDATEN – Brauerei Muster
+   ZENTRALE PRODUKTDATEN – MaschBrau
    ---------------------------------------------------------------------
    Hier stehen ALLE Angaben zu den Produkten. Wenn du einen Wert ändern
    willst (z. B. Zutaten, Nährwerte, Beschreibung), änderst du ihn nur
@@ -8,13 +8,14 @@
 
    Hinweise:
    - Zahlen mit Punkt schreiben (3.2), die Website zeigt sie mit Komma an.
-   - "farbe" ist die Akzentfarbe des Produkts (Etikett/Dose).
-   - "gebinde": "flasche" oder "dose".
+   - "farbe" ist die Akzentfarbe des Produkts (Etikett/Kronkorken).
+   - Alle Produkte gibt es als Glasflasche (Mehrweg) in 0,5 l und 0,33 l.
+   - "glas" ist die Glasfarbe der Flasche.
    - "id" muss zum Dateinamen in /produkt/ passen (z. B. helles -> produkt/helles.html).
    ===================================================================== */
 
 window.BRAUEREI = {
-  name: "Brauerei Muster",
+  name: "MaschBrau",
 
   linien: {
     bier:   { name: "Bier",      farbe: "#C98A12", text: "#7A4E00", beschreibung: "Klassisch gebraut nach dem Reinheitsgebot – als Helles und Pils, jeweils auch alkoholfrei." },
@@ -29,7 +30,7 @@ window.BRAUEREI = {
       name: "Helles",
       etikett: ["HELLES", "5,0 % vol."],
       linie: "bier",
-      gebinde: "flasche", glas: "#5A3410", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#5A3410", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#D99A1A",
       alkohol: 5.0, alkoholfrei: false, zero: false, protein: false,
       kurz: "Unser Klassiker: weich, malzig und herrlich süffig.",
@@ -45,7 +46,7 @@ window.BRAUEREI = {
       name: "Helles alkoholfrei",
       etikett: ["HELLES", "alkoholfrei"],
       linie: "bier",
-      gebinde: "flasche", glas: "#5A3410", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#5A3410", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#3D8BC0",
       alkohol: 0.4, alkoholfrei: true, zero: false, protein: false,
       kurz: "Voller Hell-Geschmack – ganz ohne Promille-Sorgen.",
@@ -61,7 +62,7 @@ window.BRAUEREI = {
       name: "Pils",
       etikett: ["PILS", "5,0 % vol."],
       linie: "bier",
-      gebinde: "flasche", glas: "#2E5530", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#2E5530", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#2E8B57",
       alkohol: 5.0, alkoholfrei: false, zero: false, protein: false,
       kurz: "Herb, klar und spritzig – norddeutsch gebraut.",
@@ -77,7 +78,7 @@ window.BRAUEREI = {
       name: "Pils alkoholfrei",
       etikett: ["PILS", "alkoholfrei"],
       linie: "bier",
-      gebinde: "flasche", glas: "#2E5530", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#2E5530", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#2A8FA6",
       alkohol: 0.4, alkoholfrei: true, zero: false, protein: false,
       kurz: "Herbe Frische nach dem Sport oder in der Mittagspause.",
@@ -95,7 +96,7 @@ window.BRAUEREI = {
       name: "Radler",
       etikett: ["RADLER", "2,5 % vol."],
       linie: "radler",
-      gebinde: "flasche", glas: "#4D7A3A", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#4D7A3A", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#8CC63F",
       alkohol: 2.5, alkoholfrei: false, zero: false, protein: false,
       kurz: "Halb Helles, halb Zitronenlimo – der Sommer in der Flasche.",
@@ -111,7 +112,7 @@ window.BRAUEREI = {
       name: "Radler alkoholfrei",
       etikett: ["RADLER", "alkoholfrei"],
       linie: "radler",
-      gebinde: "flasche", glas: "#4D7A3A", volumen: "0,5 l Mehrwegflasche",
+      gebinde: "flasche", glas: "#4D7A3A", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#3FA796",
       alkohol: 0.4, alkoholfrei: true, zero: false, protein: false,
       kurz: "Zitronig-frisch, ganz ohne Promille.",
@@ -127,7 +128,7 @@ window.BRAUEREI = {
       name: "Protein-Radler",
       etikett: ["RADLER", "PROTEIN"],
       linie: "radler",
-      gebinde: "dose", dose: "dunkel", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#2F3A2A", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#9BD14B",
       alkohol: 0.2, alkoholfrei: true, zero: false, protein: true,
       kurz: "Alkoholfreies Radler mit 3,5 g Protein pro 100 ml – für nach dem Training.",
@@ -135,7 +136,7 @@ window.BRAUEREI = {
       zutaten: "Wasser, alkoholfreies Bier (35 %) (Wasser, Gerstenmalz, Hopfen, Hefe), Molkenproteinisolat (aus Milch) (3,8 %), Zitronensaft aus Zitronensaftkonzentrat (3 %), Zucker, Kohlensäure, Säuerungsmittel Citronensäure, natürliches Zitronenaroma, Süßungsmittel Sucralose",
       allergene: "Enthält Gerste (glutenhaltig) und Milch.",
       pairing: ["Bowl mit Quinoa und Hähnchen", "Rührei mit Vollkornbrot", "Avocado-Toast", "Haferriegel"],
-      eckdaten: [["Protein je Dose", "11,6 g"], ["Trinktemperatur", "5–7 °C"]],
+      eckdaten: [["Protein je 0,5 l", "17,5 g"], ["Protein je 0,33 l", "11,6 g"], ["Trinktemperatur", "5–7 °C"]],
       naehrwerte: { kj: 134, kcal: 32, fett: 0, gesFett: 0, kh: 4.1, zucker: 3.6, eiweiss: 3.5, salz: 0.03 }
     },
 
@@ -145,7 +146,7 @@ window.BRAUEREI = {
       name: "Limo Zitrone Zero",
       etikett: ["ZITRONE", "ZERO"],
       linie: "limo", sorte: "Zitrone",
-      gebinde: "dose", dose: "hell", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#A8901C", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#F2C318",
       alkohol: 0, alkoholfrei: true, zero: true, protein: false,
       kurz: "Spritzige Zitrone ohne Zucker – nur 1 kcal pro 100 ml.",
@@ -161,7 +162,7 @@ window.BRAUEREI = {
       name: "Limo Orange Zero",
       etikett: ["ORANGE", "ZERO"],
       linie: "limo", sorte: "Orange",
-      gebinde: "dose", dose: "hell", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#B0651E", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#F08A24",
       alkohol: 0, alkoholfrei: true, zero: true, protein: false,
       kurz: "Sonnig-fruchtige Orange ganz ohne Zucker.",
@@ -177,7 +178,7 @@ window.BRAUEREI = {
       name: "Limo Blutorange Zero",
       etikett: ["BLUTORANGE", "ZERO"],
       linie: "limo", sorte: "Blutorange",
-      gebinde: "dose", dose: "hell", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#8A2235", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#C42E4A",
       alkohol: 0, alkoholfrei: true, zero: true, protein: false,
       kurz: "Herb-fruchtige Blutorange – zuckerfrei und tiefrot.",
@@ -193,7 +194,7 @@ window.BRAUEREI = {
       name: "Limo Zitrone Protein",
       etikett: ["ZITRONE", "PROTEIN"],
       linie: "limo", sorte: "Zitrone",
-      gebinde: "dose", dose: "dunkel", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#3A3F47", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#F2C318",
       alkohol: 0, alkoholfrei: true, zero: false, protein: true,
       kurz: "Zitronenlimo mit 4 g Protein pro 100 ml – leicht und klar.",
@@ -201,7 +202,7 @@ window.BRAUEREI = {
       zutaten: "Wasser, Molkenproteinisolat (aus Milch) (4,4 %), Zitronensaft aus Zitronensaftkonzentrat (4 %), Kohlensäure, Säuerungsmittel Citronensäure, Stabilisator Pektin, natürliches Zitronenaroma, Süßungsmittel Sucralose",
       allergene: "Enthält Milch.",
       pairing: ["Hähnchen-Wrap", "Griechischer Joghurt mit Beeren", "Linsensalat", "Proteinriegel"],
-      eckdaten: [["Protein je Dose", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
+      eckdaten: [["Protein je 0,5 l", "20 g"], ["Protein je 0,33 l", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
       naehrwerte: { kj: 84, kcal: 20, fett: 0, gesFett: 0, kh: 0.9, zucker: 0.8, eiweiss: 4.0, salz: 0.04 }
     },
     {
@@ -209,7 +210,7 @@ window.BRAUEREI = {
       name: "Limo Orange Protein",
       etikett: ["ORANGE", "PROTEIN"],
       linie: "limo", sorte: "Orange",
-      gebinde: "dose", dose: "dunkel", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#3A3F47", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#F08A24",
       alkohol: 0, alkoholfrei: true, zero: false, protein: true,
       kurz: "Saftige Orange mit 4 g Protein pro 100 ml.",
@@ -217,7 +218,7 @@ window.BRAUEREI = {
       zutaten: "Wasser, Molkenproteinisolat (aus Milch) (4,4 %), Orangensaft aus Orangensaftkonzentrat (5 %), Kohlensäure, Säuerungsmittel Citronensäure, Stabilisator Pektin, natürliches Orangenaroma, färbendes Lebensmittel (Karottenkonzentrat), Süßungsmittel Sucralose",
       allergene: "Enthält Milch.",
       pairing: ["Overnight Oats", "Hähnchen-Teriyaki", "Süßkartoffel-Bowl", "Quarkspeise"],
-      eckdaten: [["Protein je Dose", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
+      eckdaten: [["Protein je 0,5 l", "20 g"], ["Protein je 0,33 l", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
       naehrwerte: { kj: 88, kcal: 21, fett: 0, gesFett: 0, kh: 1.1, zucker: 1.0, eiweiss: 4.0, salz: 0.04 }
     },
     {
@@ -225,7 +226,7 @@ window.BRAUEREI = {
       name: "Limo Blutorange Protein",
       etikett: ["BLUTORANGE", "PROTEIN"],
       linie: "limo", sorte: "Blutorange",
-      gebinde: "dose", dose: "dunkel", volumen: "0,33 l Dose (bepfandet)",
+      gebinde: "flasche", glas: "#3A3F47", volumen: "0,5 l oder 0,33 l Glasflasche (Mehrweg)",
       farbe: "#C42E4A",
       alkohol: 0, alkoholfrei: true, zero: false, protein: true,
       kurz: "Herb-fruchtige Blutorange mit 4 g Protein pro 100 ml.",
@@ -233,7 +234,7 @@ window.BRAUEREI = {
       zutaten: "Wasser, Molkenproteinisolat (aus Milch) (4,4 %), Blutorangensaft aus Blutorangensaftkonzentrat (5 %), Kohlensäure, Säuerungsmittel Citronensäure, Stabilisator Pektin, natürliches Blutorangenaroma, färbendes Lebensmittel (Konzentrat aus Schwarzer Karotte), Süßungsmittel Sucralose",
       allergene: "Enthält Milch.",
       pairing: ["Lachs-Poke-Bowl", "Rote-Bete-Salat mit Walnüssen", "Gegrilltes Gemüse", "Skyr mit Granola"],
-      eckdaten: [["Protein je Dose", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
+      eckdaten: [["Protein je 0,5 l", "20 g"], ["Protein je 0,33 l", "13,2 g"], ["Trinktemperatur", "4–6 °C"]],
       naehrwerte: { kj: 88, kcal: 21, fett: 0, gesFett: 0, kh: 1.0, zucker: 0.9, eiweiss: 4.0, salz: 0.04 }
     }
   ]

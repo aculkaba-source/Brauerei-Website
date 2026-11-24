@@ -1,4 +1,4 @@
-# Brauerei Muster – Website (fiktives Studienprojekt)
+# MaschBrau – Website (fiktives Studienprojekt)
 
 Mehrseitige Firmen-Website einer **fiktiven** Brauerei aus Salzgitter.
 Reines HTML, CSS und JavaScript: kein Framework, kein Build-Schritt, keine Cookies, keine externen Dienste.
@@ -15,7 +15,7 @@ Reines HTML, CSS und JavaScript: kein Framework, kein Build-Schritt, keine Cooki
 | `ueber-uns.html`, `standort.html`, `brauprozess.html`, `kontakt.html`, `impressum.html` | weitere Seiten |
 | `404.html` | Fehlerseite |
 | `js/produkte.js` | **alle Produktdaten an einer Stelle** |
-| `js/grafik.js` | zeichnet Flaschen und Dosen als SVG |
+| `js/grafik.js` | zeichnet die Glasflaschen (0,5 l und 0,33 l) als SVG |
 | `js/main.js` | Menü, Animationen, Zähler, Filter, Vergleich, Detailseiten, Formular |
 | `css/style.css` | gesamtes Design (Farben ganz oben als Variablen) |
 | `sitemap.xml`, `robots.txt`, `favicon.svg` | SEO und Symbol im Browser-Tab |
@@ -32,19 +32,11 @@ Wenn du ein **neues Produkt** hinzufügst:
 3. Ersetze in der neuen Datei die alte `id` und den Namen (Titel, Beschreibung, `data-produkt="..."`).
 4. Trage die neue Adresse in `sitemap.xml` ein.
 
-## Den Namen „Brauerei Muster“ ersetzen
+## MaschBrau-App
 
-Der Name steht in fast allen Dateien. Am einfachsten geht das so (funktioniert auch auf dem iPad in Safari):
-
-1. Öffne das Repository auf github.com und drücke die Taste **`.`** (Punkt). Alternativ ersetzt du in der Adresse `github.com` durch `github.dev`.
-   Es öffnet sich ein Editor im Browser.
-2. Links auf das **Lupen-Symbol** (Suche) tippen.
-3. Ins Suchfeld `Brauerei Muster` eintippen, auf den kleinen Pfeil links tippen und ins Ersetzen-Feld den neuen Namen schreiben.
-4. Auf **„Alle ersetzen“** tippen.
-5. Wiederhole das für `brauerei-muster` (steht in den E-Mail-Adressen) und `MUSTER` (steht auf den Etiketten in `js/grafik.js`).
-6. Links auf das Symbol **Quellcodeverwaltung** (Verzweigung) tippen, eine kurze Nachricht eingeben und **Commit & Push** wählen.
-
-Oder du bittest Claude Code einfach: *„Ersetze überall ‚Brauerei Muster‘ durch ‚…‘“*.
+Zur Website gehört die Web-App mit Abo, Kundenkarte, Coupons und Punkten:
+https://aculkaba-source.github.io/MaschBrau-App/ (Code im Repository `MaschBrau-App`).
+Verlinkt ist sie im Menü („App“), auf der Startseite und im Fußbereich jeder Seite.
 
 ---
 *Fiktives Studienprojekt – keine echte Brauerei, keine echten Produkte.*

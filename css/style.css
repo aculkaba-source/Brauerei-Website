@@ -1,5 +1,5 @@
 /* =====================================================================
-   STYLE.CSS – Brauerei Muster
+   STYLE.CSS – MaschBrau
    Mobile-first: Grundstil für Handy, ab 700px Tablet, ab 1024px Laptop.
    Farben stehen als Variablen ganz oben und lassen sich leicht ändern.
    ===================================================================== */
@@ -268,7 +268,8 @@ html:not(.js) .kopf__innen { flex-wrap: wrap; }
   display: flex; justify-content: center; padding: 2rem 1rem; border-radius: calc(var(--radius) + 6px);
   background: radial-gradient(circle at 50% 60%, color-mix(in srgb, var(--akzent) 26%, #fff) 0%, var(--flaeche) 70%);
 }
-.detail-bild svg { height: clamp(260px, 50vw, 420px); width: auto; }
+.detail-bild { align-items: flex-end; gap: clamp(.5rem, 3vw, 2rem); }
+.detail-bild svg { height: clamp(240px, 46vw, 420px); width: auto; }
 .detail-intro h1 { margin-bottom: .3em; }
 .eckdaten { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .75rem; margin: 1.5rem 0; }
 .eckdaten div { background: var(--flaeche); border-radius: var(--radius-klein); padding: .7rem .9rem; border-left: 4px solid var(--akzent); }
